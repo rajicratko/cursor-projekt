@@ -1,0 +1,26 @@
+{
+  "name": "Evidencija prometa robe",
+  "install": "npm install",
+  "terminals": [
+    {
+      "name": "server",
+      "command": "npm run server",
+      "description": "Express + SQLite REST API na http://localhost:3001"
+    },
+    {
+      "name": "client",
+      "command": "npm run client",
+      "description": "Vite dev server (React) na http://localhost:5173, proksira /api na server"
+    }
+  ],
+  "ports": [
+    {
+      "name": "API server",
+      "port": 3001
+    },
+    {
+      "name": "Vite klijent",
+      "port": 5173
+    }
+  ]
+}
