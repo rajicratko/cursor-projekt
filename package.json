@@ -1,0 +1,13 @@
+{
+  "name": "evidencija-prometa-robe",
+  "private": true,
+  "description": "Klijent-server program za evidenciju prometa robe",
+  "scripts": {
+    "postinstall": "npm install --prefix server && npm install --prefix client",
+    "server": "npm start --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "npm run server & npm run client",
+    "test": "npm test --prefix server",
+    "build": "npm run build --prefix client"
+  }
+}
